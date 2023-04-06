@@ -1,2 +1,2 @@
 # DiplomaThesis
-magnify eye motions to estimate icp
+## Magnify eye motions to estimate Intracranial pressure(ICP)
