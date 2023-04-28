@@ -1,5 +1,5 @@
-vid1 = VideoReader('D:\diploma_thesis\Non Invasive Estimation of Intracranial Pressure\phaseBased\Release\data\rafaela clips\cutted_C0044.avi');
-vid2 = VideoReader('D:\diploma_thesis\Non Invasive Estimation of Intracranial Pressure\phaseBased\Release\ResultsSIGGRAPH2013\cutted_C0044-differenceOfIIR-band35.00-50.00-sr1000-alpha100-mp0-sigma4-scale1.00-frames1-1092-quarterOctave.avi');
+vid1 = VideoReader('PATH1');
+vid2 = VideoReader('PATH2');
 videoPlayer = vision.VideoPlayer;
 % new video
 outputVideo = VideoWriter('CompareVideo.avi');
