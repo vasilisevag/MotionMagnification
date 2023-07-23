@@ -23,7 +23,11 @@ function AppNotchFilter(vidFileIn,vidFileOut, notchFreq, BW, FR)
     
     % Normalize the notch frequency between 0 and 1
     %normalizedNotchFreq = notchFreq / 500;
-    normalizedNotchFreq = notchFreq1 / FR;
+    if FR < notchFreq1
+        normalizedNotchFreq = 0.24; %notchFreq1 / FR;
+    elseif FR > notchFreq1
+        normalizedNotchFreq = notchFreq1 / FR;
+    end
     
     
     % Design the notch filter with a narrow bandwidth
