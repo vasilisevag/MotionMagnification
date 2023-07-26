@@ -21,9 +21,9 @@ function outName = phaseAmplify(vidFile, magPhase , fl, fh,fs, outDir, varargin)
     vr = VideoReader(vidFile);
     [~, writeTag, ~] = fileparts(vidFile);
     FrameRate = vr.FrameRate;    
-    vid = vr.read([100 350]); % clip video
+    vid = read(vr); % clip video
 
-    vid = vid(250:750, 500:1500, :, :);
+    vid = vid(250:850, 850:1500, :, :);
 
     [h, w, nC, nF] = size(vid);
     
